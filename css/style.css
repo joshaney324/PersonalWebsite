@@ -82,6 +82,14 @@ main {
     text-decoration: none;
 }
 
+.project {
+    width: 80%
+}
+
+.research {
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
