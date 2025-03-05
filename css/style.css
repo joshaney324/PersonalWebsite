@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f8f9fa;
     color: #333;
 }
+
 
 header {
     background-color: white;
@@ -31,7 +33,7 @@ nav ul li a {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 50px auto;
     background: white;
     padding: 20px;
@@ -39,16 +41,26 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
 .profile {
     text-align: center;
+    width: 40%;
 }
 
 .profile img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #0077cc
+    border: 3px solid #0077cc;
 }
 
 .profile h1 {
@@ -61,7 +73,23 @@ main {
     text-decoration: none;
 }
 
+.bio {
+    width: 60%;
+}
+
 .bio a {
     color: #0077cc;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile, .bio {
+        width: 100%;
+    }
 }
