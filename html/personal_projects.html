@@ -21,61 +21,209 @@
 <main>
     <div class="container">
         <section class="project">
-            <h2>Project 1</h2>
-            <p>Welcome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum et purus vitae justo scelerisque fermentum. Nam ac felis euismod, interdum tortor at, placerat ex.</p>
-            <p>Curabitur nec sapien eget eros bibendum scelerisque. Donec aliquet libero at justo cursus, id elementum metus ultricies. Suspendisse potenti. enim ac purus bibendum gravida.</p>
-            <p>Phasellus a elit id ex bibendum dictum. at lacus id tincidunt. Duis gravida, metus a consequat dapibus, orci velit gravida turpis, non venenatis felis eros ut ligula.</p>
+            <h2>Machine Learning Project 1 - Naive Bayes</h2>
+            <p><strong>Description:</strong> For this project, I worked in a team with another student at Montana State University. We
+                were faced with coding a Naive Bayes model from scratch to be used on classification datasets from the
+                <a href="https://archive.ics.uci.edu/">UCI Machine Learning Repository</a>. For this project, we used the
+                <a href="https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original">Breast Cancer Wisconsin Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/42/glass+identification">Glass Identification Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/105/congressional+voting+records">Congressional Voting Records Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/53/iris">Iris Dataset</a>, and
+                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>. Once we had
+                a base metric for our model, we inserted a simulated noise by randomizing one of the features of each dataset.
+                We then Compared our results from the noisy and non-noisy data. All of this was done in python.</p>
+            <p><strong>Results:</strong> Our Naive Bayes model performed well on all the datasets with a slight decrease in performance with the simulated noise.</p>
+
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_1/original_data_avgs.svg" alt="Original Data Averages">
+                    <figcaption>Original Data Averages</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_1/noisy_data_avgs.svg" alt="Noisy Data Averages">
+                    <figcaption>Noisy Data Averages</figcaption>
+                </div>
+            </div>
+
+            <p>The full results from this experiment can be found <a href="../images/ml_1/ml_paper_1.pdf" target="_blank">here</a></p>
         </section>
     </div>
 
     <div class="container">
         <section class="project">
-            <h2>Project 2</h2>
-            <p>Welcome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum et purus vitae justo scelerisque fermentum. Nam ac felis euismod, interdum tortor at, placerat ex.</p>
-            <p>Curabitur nec sapien eget eros bibendum scelerisque. Donec aliquet libero at justo cursus, id elementum metus ultricies. Suspendisse potenti. enim ac purus bibendum gravida.</p>
-            <p>Phasellus a elit id ex bibendum dictum. at lacus id tincidunt. Duis gravida, metus a consequat dapibus, orci velit gravida turpis, non venenatis felis eros ut ligula.</p>
+            <h2>Machine Learning Project 2 - K Nearest Neighbors Methods</h2>
+            <p><strong>Description</strong>: For this project, I worked in a team with two other students at Montana State University.
+                We were tasked with coding a KNN classification model, KNN regression model, edited KNN classification
+                model, edited KNN regression model, and a K-Means clustering model from scratch. We then used these
+                models on a variety of datasets. We used the
+                <a href="https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original">Breast Cancer Wisconsin Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/42/glass+identification">Glass Identification Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/1/abalone">Abalone Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/162/forest+fires">Forest Fires Dataset</a>, and the
+                <a href="https://archive.ics.uci.edu/dataset/29/computer+hardware">Computer Hardware Dataset</a>.
+                An experiment was then conducted to compare each of these models. This was all done in python.</p>
+            <p><strong>Results</strong>: Many of the K Nearest Neighbors Methods performed better on classification data then on regression data.
+                The performance of individual models depended on the structure of each dataset.</p>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_2/BreastCancerBarPlot.png" alt="Breast Cancer Dataset Performance">
+                    <figcaption>Breast Cancer Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_2/GlassBarPlot.png" alt="Glass Dataset Performance">
+                    <figcaption>Glass Dataset Performance</figcaption>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_2/SoyBarPlot.png" alt="Soybean (Small) Dataset Performance">
+                    <figcaption>Soybean (Small) Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_2/AbaloneBarPlot.png" alt="Abalone Dataset Performance">
+                    <figcaption>Abalone Dataset Performance</figcaption>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_2/ForestBarPlot.png" alt="Forest Fires Dataset Performance">
+                    <figcaption>Forest Fires Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_2/HardwareBarPlot.png" alt="Computer Hardware Dataset Performance">
+                    <figcaption>Computer Hardware Dataset Performance</figcaption>
+                </div>
+            </div>
+
+            <p>The full results from this experiment can be found <a href="../images/ml_2/ml_paper_2.pdf" target="_blank">here</a></p>
         </section>
     </div>
 
     <div class="container">
         <section class="project">
-            <h2>Project 3</h2>
-            <p>Welcome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum et purus vitae justo scelerisque fermentum. Nam ac felis euismod, interdum tortor at, placerat ex.</p>
-            <p>Curabitur nec sapien eget eros bibendum scelerisque. Donec aliquet libero at justo cursus, id elementum metus ultricies. Suspendisse potenti. enim ac purus bibendum gravida.</p>
-            <p>Phasellus a elit id ex bibendum dictum. at lacus id tincidunt. Duis gravida, metus a consequat dapibus, orci velit gravida turpis, non venenatis felis eros ut ligula.</p>
+            <h2>Machine Learning Project 3 - Densely Connected Neural Network</h2>
+            <p><strong>Description</strong>: For this project, I worked in a team with two other students at Montana State University.
+                We were tasked with coding a densely connected neural network. This network was trained with backpropagation. We then used our
+                model on a variety of datasets. We used the
+                <a href="https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original">Breast Cancer Wisconsin Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/42/glass+identification">Glass Identification Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/1/abalone">Abalone Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/162/forest+fires">Forest Fires Dataset</a>, and the
+                <a href="https://archive.ics.uci.edu/dataset/29/computer+hardware">Computer Hardware Dataset</a>.
+                An experiment was then conducted to analyze the performance of our neural network with varying network
+                sizes and varying amounts of hidden layers on each dataset.</p>
+            <p><strong>Results</strong>: The neural network tended to perform better with zero or one hidden layer,
+                compared to two hidden layers. The amount of nodes in each hidden layer varied depending on the results
+                from hyperparameter tuning.</p>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_3/breast_bar.svg" alt="Breast Cancer Dataset Performance">
+                    <figcaption>Breast Cancer Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_3/glass_bar.svg" alt="Glass Dataset Performance">
+                    <figcaption>Glass Dataset Performance</figcaption>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_3/soy_bar.svg" alt="Soybean (Small) Dataset Performance">
+                    <figcaption>Soybean (Small) Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_3/abalone_bar.svg" alt="Abalone Dataset Performance">
+                    <figcaption>Abalone Dataset Performance</figcaption>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_3/forest_bar.svg" alt="Forest Fires Dataset Performance">
+                    <figcaption>Forest Fires Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_3/machine_bar.svg" alt="Computer Hardware Dataset Performance">
+                    <figcaption>Computer Hardware Dataset Performance</figcaption>
+                </div>
+            </div>
+
+            <p>The full results from this experiment can be found <a href="../images/ml_3/ml_paper_3.pdf" target="_blank">here</a></p>
         </section>
     </div>
 
     <div class="container">
         <section class="project">
-            <h2>Project 4</h2>
-            <p>Welcome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum et purus vitae justo scelerisque fermentum. Nam ac felis euismod, interdum tortor at, placerat ex.</p>
-            <p>Curabitur nec sapien eget eros bibendum scelerisque. Donec aliquet libero at justo cursus, id elementum metus ultricies. Suspendisse potenti. enim ac purus bibendum gravida.</p>
-            <p>Phasellus a elit id ex bibendum dictum. at lacus id tincidunt. Duis gravida, metus a consequat dapibus, orci velit gravida turpis, non venenatis felis eros ut ligula.</p>
+            <h2>Machine Learning Project 4 - A Comparison of Neural Network Training Methods</h2>
+            <p><strong>Description</strong>: For this project, I worked in a team with two other students at Montana State University.
+                We were tasked with coding multiple different training methods for a neural network. We focussed on
+                population based methods and backpropogation. We then used our
+                models on a variety of datasets. We used the
+                <a href="https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original">Breast Cancer Wisconsin Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/42/glass+identification">Glass Identification Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/1/abalone">Abalone Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/162/forest+fires">Forest Fires Dataset</a>, and the
+                <a href="https://archive.ics.uci.edu/dataset/29/computer+hardware">Computer Hardware Dataset</a>.
+                This project then built on project 3. We compared our results from backpropogation to three other
+                network training algorithms. These algorithms were the genetic algorithm, differential evolution, and
+                particle swarm optimization.</p>
+            <p><strong>Results</strong>: The performance of the models was really variable. Datasets that tended to
+                overfit with backpropogation would often perform better with population based methods.</p>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_4/BreastCancerAccuracy.png" alt="Breast Cancer Dataset Performance">
+                    <figcaption>Breast Cancer Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_4/GlassAccuracy.png" alt="Glass Dataset Performance">
+                    <figcaption>Glass Dataset Performance</figcaption>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_4/SoyAccuracy.png" alt="Soybean (Small) Dataset Performance">
+                    <figcaption>Soybean (Small) Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_4/AbaloneMSE.png" alt="Abalone Dataset Performance">
+                    <figcaption>Abalone Dataset Performance</figcaption>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="../images/ml_4/ForestMSE.png" alt="Forest Fires Dataset Performance">
+                    <figcaption>Forest Fires Dataset Performance</figcaption>
+                </div>
+                <div class="image-item">
+                    <img src="../images/ml_4/MachineMSE.png" alt="Computer Hardware Dataset Performance">
+                    <figcaption>Computer Hardware Dataset Performance</figcaption>
+                </div>
+            </div>
+
+            <p>The full results from this experiment can be found <a href="../images/ml_4/ml_paper_4.pdf" target="_blank">here</a></p>
         </section>
     </div>
 
     <div class="container">
         <section class="project">
-            <h2>Project 5</h2>
-            <p>Welcome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum et purus vitae justo scelerisque fermentum. Nam ac felis euismod, interdum tortor at, placerat ex.</p>
-            <p>Curabitur nec sapien eget eros bibendum scelerisque. Donec aliquet libero at justo cursus, id elementum metus ultricies. Suspendisse potenti.  enim ac purus bibendum gravida.</p>
-            <p>Phasellus a elit id ex bibendum dictum. at lacus id tincidunt. Duis gravida, metus a consequat dapibus, orci velit gravida turpis, non venenatis felis eros ut ligula.</p>
+            <h2>Web Project</h2>
+            <p>Description: A short description of your web project, the goal of the website, and the technologies you used (e.g., HTML, CSS, JavaScript, etc.).</p>
+            <p>Technologies: List the web development tools used (e.g., React, Node.js, etc.).</p>
+            <p>Results: Any key features or achievements of the web project, such as user interactions or functionality.</p>
         </section>
     </div>
 
     <div class="container">
         <section class="project">
-            <h2>Project 6</h2>
-            <p>Welcome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum et purus vitae justo scelerisque fermentum. Nam ac felis euismod, interdum tortor at, placerat ex.</p>
-            <p>Curabitur nec sapien eget eros bibendum scelerisque. Donec aliquet libero at justo cursus, id elementum metus ultricies. Suspendisse potenti. enim ac purus bibendum gravida.</p>
-            <p>Phasellus a elit id ex bibendum dictum. at lacus id tincidunt. Duis gravida, metus a consequat dapibus, orci velit gravida turpis, non venenatis felis eros ut ligula.</p>
+            <h2>Unity Project</h2>
+            <p>Description: A brief explanation of the Unity game or application project.</p>
+            <p>Technologies: Mention the Unity version and other tools you used for development.</p>
+            <p>Results: Any significant outcomes or experiences from the Unity project.</p>
         </section>
     </div>
-
-
-
-
 
 </main>
 
+</body>
+</html>

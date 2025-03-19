@@ -12,6 +12,10 @@ header {
     background-color: white;
     padding: 15px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centers the nav inside the header */
+    align-items: center;
+    width: 100%;
 }
 
 nav ul {
@@ -19,7 +23,9 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
+    gap: 80px;
+    justify-content: center; /* Centers the items inside the ul */
+    align-items: center;
 }
 
 nav ul li {
@@ -33,7 +39,7 @@ nav ul li a {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 50px auto;
     background: white;
     padding: 20px;
@@ -44,7 +50,7 @@ main {
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 30px;
 }
@@ -53,9 +59,14 @@ main {
 .profile {
     text-align: center;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .profile img {
+    margin-top: 50px;
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -68,6 +79,8 @@ main {
     font-size: 24px;
 }
 
+
+
 .profile .links a {
     color: #0077cc;
     text-decoration: none;
@@ -75,6 +88,7 @@ main {
 
 .bio {
     width: 60%;
+    font-size: 18px;
 }
 
 .bio a {
@@ -101,3 +115,26 @@ main {
         width: 100%;
     }
 }
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image-item {
+    text-align: center;
+    width: 48%;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
+
