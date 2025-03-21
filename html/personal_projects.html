@@ -284,9 +284,43 @@
     <div id="bike-webapp" class="container">
         <section class="project">
             <h2>Web Project</h2>
-            <p>Description: A short description of your web project, the goal of the website, and the technologies you used (e.g., HTML, CSS, JavaScript, etc.).</p>
-            <p>Technologies: List the web development tools used (e.g., React, Node.js, etc.).</p>
-            <p>Results: Any key features or achievements of the web project, such as user interactions or functionality.</p>
+            <p><strong>Description</strong>: I created a basic web application that allows users to log different mountain bike trails in
+                the Bozeman community. A user is able to keep a list of trails that they have ridden as well as plot it
+                on a 3d map. Once they add the trails that they have ridden, it will show up on the home page with the
+                description, difficulty, as well as other trail descriptors. Users are also able to search for trails
+                based off of trail name, trail difficulty, and trail type. </p>
+
+            <div class="slideshow-container bike_webapp">
+
+                <div class="mySlides fade" data-caption="Website Homepage">
+                    <img src="../images/bike_webapp/home_page.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade" data-caption="Adding Trails">
+                    <img src="../images/bike_webapp/add_trail.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade" data-caption="Trail Search">
+                    <img src="../images/bike_webapp/trail_search.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade" data-caption="Trail Map">
+                    <img src="../images/bike_webapp/trail_map.png" class="slideshow-img">
+                </div>
+
+                <div style="padding-top: 20px">
+                    <a class="prev" onclick="showSlide('.bike_webapp', -1)">&#10094;</a>
+                    <a class="next" onclick="showSlide('.bike_webapp', 1)">&#10095;</a>
+                    <span class="caption"></span>
+                </div>
+            </div>
+
+            <p><strong>Technologies</strong>: This website is built off of Microsoft's .net framework. It uses razor pages to build the
+                structure of the website.</p>
+            <p><strong>Future Additions</strong>: Eventually I would like to functionality for multiple users so that
+                individual users would be able to have their own trails logged as well as not having a public database.
+                I would also like to add more features to the map so that it can highlight trails based off of the user's
+                searches.</p>
         </section>
     </div>
 

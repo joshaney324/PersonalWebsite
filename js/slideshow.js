@@ -3,6 +3,7 @@ window.onload = function() {
     showSlide(".ml_2", 1);
     showSlide(".ml_3", 1);
     showSlide(".ml_4", 1);
+    showSlide(".bike_webapp", 1)
 }
 
 function showSlide(id, direction) {
