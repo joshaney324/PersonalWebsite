@@ -327,9 +327,34 @@
     <div id="unity" class="container">
         <section class="project">
             <h2>Unity Project</h2>
-            <p>Description: A brief explanation of the Unity game or application project.</p>
-            <p>Technologies: Mention the Unity version and other tools you used for development.</p>
-            <p>Results: Any significant outcomes or experiences from the Unity project.</p>
+            <p><strong>Description</strong>: This project is currently a work in progress. I am working on building a
+                game that can be learned by an AI agent. Currently, the base game is built with user input in mind
+                instead of an AI agent. The goal of the game is to pick up collectibles and not get caught by an
+                antagonist.</p>
+
+            <div class="slideshow-container unity">
+
+                <div class="mySlides fade" data-caption="Unity UI">
+                    <img src="../images/roll_a_ball/ui.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade" data-caption="Roll A Ball gameplay">
+                    <img src="../images/roll_a_ball/gameplay.png" class="slideshow-img">
+                </div>
+
+                <div style="padding-top: 20px">
+                    <a class="prev" onclick="showSlide('.unity', -1)">&#10094;</a>
+                    <a class="next" onclick="showSlide('.unity', 1)">&#10095;</a>
+                    <span class="caption"></span>
+                </div>
+
+            </div>
+
+            <p><strong>Technologies</strong>: This game is built with Unity 6 as well as C# for all the game controllers. The future AI
+                Agent will be built with Unity ML Agents.</p>
+            <p><strong>Future Additions</strong>: As stated above the goal will be to build a PPO (Proximal Policy Optimization)
+                model to train an AI Agent to beat the game. To do this I will need to build randomized maps as well as
+                randomized collectible placements to allow the model to not overfit.</p>
         </section>
     </div>
 
