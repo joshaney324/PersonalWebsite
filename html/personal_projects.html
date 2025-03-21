@@ -62,9 +62,12 @@
                 <a href="https://archive.ics.uci.edu/dataset/42/glass+identification">Glass Identification Dataset</a>,
                 <a href="https://archive.ics.uci.edu/dataset/105/congressional+voting+records">Congressional Voting Records Dataset</a>,
                 <a href="https://archive.ics.uci.edu/dataset/53/iris">Iris Dataset</a>, and
-                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>. Once we had
-                a base metric for our model, we inserted a simulated noise by randomizing one of the features of each dataset.
-                We then Compared our results from the noisy and non-noisy data. All of this was done in python.</p>
+                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>. A base model
+                performance was received after testing each of the datasets. We performed 10-fold cross validation, and
+                we used precision recall and accuracy as the metrics. Once we had a base performance, we then added
+                artificial noise to the datasets. This was done by selecting one feature in the dataset at random and
+                then mixing up the order of that given attribute. We then performed the experiment one more time to test
+                how our Naive Bayes model performed with more noise.</p>
             <p><strong>Results:</strong> Our Naive Bayes model performed well on all the datasets with a slight decrease in performance with the simulated noise.</p>
 
 
