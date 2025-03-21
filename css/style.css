@@ -16,6 +16,34 @@ header {
     width: 100%;
 }
 
+.footer {
+    background-color: #ffffff;
+    color: white;
+    padding: 0px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-bottom {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
 
 nav ul {
     list-style: none;
