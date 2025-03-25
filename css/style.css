@@ -77,8 +77,10 @@ main {
 .container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
+    text-align: left;
+    margin-top: 50px;
 }
 
 
