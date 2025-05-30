@@ -26,21 +26,29 @@
     <p>This page is meant to give a short descriptions of many of the projects that I have been a part of. </p>
 
     <p>There are four machine learning projects that are listed. These projects are set up in an experiment style where
-    a question was prompted and then an experiment was completed to test our hypotheses. A full report will be linked
-    after each project. This report will contain a detailed explanation of the problem, the methods that were used in the
-    experiment, and a detailed analysis of the results</p>
+    a question was prompted and then an experiment was completed to test our hypotheses. A full report is available
+    each project, but it is not linked. This report will contain a detailed explanation of the problem, the methods
+    that were used in the experiment, and a detailed analysis of the results</p>
 
     <p>The next project is a small web application that is meant to help a user track what trails they have ridden in
     the Bozeman area. This application lets users add trails which the trails will then be plotted on a 3d map as well
     as being displayed on the home page. </p>
 
+    <p>The next project is a machine learning model that will classify the ASL (American Sign Language) alphabet and
+        allow users to sign out words onto the screen. For this project, there is code that will allow the user to create
+        their own dataset if they choose.</p>
+
     <p>The final project is a small unity game that allows the user to rol a ball around a surface while trying to
-        collect  pick-ups. There is a antagonist that will chase the user while they are trying to pick up the
+        collect  pick-ups. There is an antagonist that will chase the user while they are trying to pick up the
         collectibles.</p>
 
-    <p>All the source code for these projects can be found on my <a href="https://github.com/joshaney324">GitHub</a>.</p>
+    <p>All the source code for these projects can be found on my <a href="https://github.com/joshaney324">GitHub</a>.
+        This excludes the machine learning projects. If you want to see the code for these, please contact me by email.
+        There are also design documents and full reports for all the machine learning projects. If you would like to see
+        those please contact me as well.</p>
+    <br>
 
-    <div class="project-list">
+    <div class="project-list two-column">
         <ul>
             <li>
                 <strong>Project 1:</strong> <a href="#ml_1">Naive Bayes Model From Scratch</a>
@@ -92,7 +100,17 @@
                 </ul>
             </li>
             <li>
-                <strong>Project 6:</strong> <a href="#unity">Unity Project</a>
+                <strong>Project 6:</strong> <a href="#asl">Hand Tracking / ASL Alphabet Detection</a>
+                <ul>
+                    <li>Python</li>
+                    <li>Dataset Creation</li>
+                    <li>Data Preprocessing</li>
+                    <li>Tensorflow</li>
+                    <li>Mediapipe</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Project 7:</strong> <a href="#unity">Unity Project</a>
                 <ul>
                     <li>C#</li>
                     <li>Unity Physics</li>
@@ -116,12 +134,12 @@
                 <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>. A base model
                 performance was received after testing each of the datasets. We performed 10-fold cross validation, and
                 we used precision recall and accuracy as the metrics. Once we had a base performance, we then added
-                artificial noise to the datasets. This was done by selecting one feature in the dataset at random and
+                artificial noise to the datasets. This was done by selecting 10% of the features in the dataset at random and
                 then mixing up the order of that given attribute. We then performed the experiment one more time to test
                 how our Naive Bayes model performed with more noise.</p>
             <br>
-            <p>The full design document for this project can be found <a href="images/ml_1/Project%201%20Design%20Document.pdf" target="_blank">here</a>.</p>
-            <br>
+<!--            <p>The full design document for this project can be found <a href="images/ml_1/Project%201%20Design%20Document.pdf" target="_blank">here</a>.</p>-->
+<!--            <br>-->
             <p><strong>Results:</strong> Our Naive Bayes model performed well on all the datasets with a slight decrease in performance with the simulated noise.</p>
 
 
@@ -144,7 +162,7 @@
             </div>
             <br>
 
-            <p>The full results from this experiment can be found <a href="images/ml_1/ml_paper_1.pdf" target="_blank">here</a></p>
+<!--            <p>The full results from this experiment can be found <a href="images/ml_1/ml_paper_1.pdf" target="_blank">here</a></p>-->
         </section>
     </div>
 
@@ -174,8 +192,8 @@
                 we used the centroids from a K-Means Clustering model. Once these experiments were completed, we then
                 analyzed and compared the results from all the different models</p>
             <br>
-            <p>The full design document for this project can be found <a href="images/ml_2/Project%202%20Design%20Document.pdf" target="_blank">here</a>.</p>
-            <br>
+<!--            <p>The full design document for this project can be found <a href="images/ml_2/Project%202%20Design%20Document.pdf" target="_blank">here</a>.</p>-->
+<!--            <br>-->
             <p><strong>Results</strong>: Many of the K Nearest Neighbors Methods performed better on classification data then on regression data.
                 The performance of individual models depended on the structure of each dataset. Depending on if the dataset
                 contained large amounts of outliers, the K-Means model or the edited model would perform better.</p>
@@ -216,7 +234,7 @@
             </div>
             <br>
 
-            <p>The full results from this experiment can be found <a href="images/ml_2/ml_paper_2.pdf" target="_blank">here</a></p>
+<!--            <p>The full results from this experiment can be found <a href="images/ml_2/ml_paper_2.pdf" target="_blank">here</a></p>-->
         </section>
     </div>
 
@@ -239,8 +257,8 @@
                 sizes and varying amounts of hidden layers on each dataset. Each dataset was tested by completing 10-fold
                 cross validation excluding the hold out fold's data points. These results were then analyzed for each dataset.</p>
             <br>
-            <p>The full design document for this project can be found <a href="images/ml_3/Project%203%20Design%20Document.pdf" target="_blank">here</a>.</p>
-            <br>
+<!--            <p>The full design document for this project can be found <a href="images/ml_3/Project%203%20Design%20Document.pdf" target="_blank">here</a>.</p>-->
+<!--            <br>-->
             <p><strong>Results</strong>: The neural network tended to perform better with zero or one hidden layer,
                 compared to two hidden layers. On the more complex datasets, the network may perform better with one
                 hidden layer, but it rarely performed best with two hidden layers.</p>
@@ -279,7 +297,7 @@
 
             </div>
 
-            <p>The full results from this experiment can be found <a href="images/ml_3/ml_paper_3.pdf" target="_blank">here</a></p>
+<!--            <p>The full results from this experiment can be found <a href="images/ml_3/ml_paper_3.pdf" target="_blank">here</a></p>-->
         </section>
     </div>
 
@@ -301,8 +319,8 @@
                 we only tuned a small amount of the available hyperparameters. Once again we performed 10-fold cross
                 validation on all the datasets and then compared the results across all the training methods.</p>
             <br>
-            <p>The full design document for this project can be found <a href="images/ml_4/ML%20Project%204%20Design%20Doc.pdf" target="_blank">here</a>.</p>
-            <br>
+<!--            <p>The full design document for this project can be found <a href="images/ml_4/ML%20Project%204%20Design%20Doc.pdf" target="_blank">here</a>.</p>-->
+<!--            <br>-->
             <p><strong>Results</strong>: The performance of the models was really variable. Datasets that tended to
                 overfit with backpropagation would often perform better with population based methods and datasets that
                 were relatively simple would often perform drastically better with backpropagation.</p>
@@ -340,7 +358,7 @@
 
             </div>
 
-            <p>The full results from this experiment can be found <a href="images/ml_4/ml_paper_4.pdf" target="_blank">here</a></p>
+<!--            <p>The full results from this experiment can be found <a href="images/ml_4/ml_paper_4.pdf" target="_blank">here</a></p>-->
         </section>
     </div>
 
@@ -382,12 +400,44 @@
                 </div>
             </div>
 
-            <p><strong>Technologies</strong>: This website is built off ASP .NET Core. It uses razor pages to build the
-                structure of the website.</p>
-            <p><strong>Future Additions</strong>: Eventually I would like to functionality for multiple users so that
-                individual users would be able to have their own trails logged as well as not having a public database.
-                I would also like to add more features to the map so that it can highlight trails based off of the user's
+            <p><strong>Technologies</strong>: C#, HTML, CSS, ASP .NET Core, Javascript, SQL</p>
+            <p><strong>Future Additions</strong>: I would also like to add more features to the map so that it can highlight trails based off of the user's
                 searches.</p>
+        </section>
+    </div>
+
+    <div id="asl" class="container">
+        <section class="project">
+            <h2>Hand Tracking / ASL Alphabet Detection</h2>
+            <p><strong>Description</strong>: For this project I developed a real-time ASL alphabet detection system
+                using computer vision and machine learning techniques. I used MediaPipe to get hand landmarks for tracking.
+                I then created a training dataset with all the hand landmarks as features and then trained a Multi-layer
+                Perceptron Classifier to classify between the different letters of the alphabet. I added a visual feedback
+                interface that would allow users to type out words. This interface includes a confidence measure for each
+                letter as well as a progress bar indicating gesture recognition confidence over time.</p>
+
+            <div class="slideshow-container asl_detection">
+
+                <div class="mySlides fade" data-caption="Hand Landmark Detection">
+                    <img src="images/ASL_detection/hand_tracking.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade" data-caption="ASL Alphabet Detection">
+                    <img src="images/ASL_detection/asl_detection.png" class="slideshow-img">
+                </div>
+
+                <div style="padding-top: 20px">
+                    <a class="prev" onclick="showSlide('.asl_detection', -1)">&#10094;</a>
+                    <a class="next" onclick="showSlide('.asl_detection', 1)">&#10095;</a>
+                    <span class="caption"></span>
+                </div>
+
+            </div>
+
+            <p><strong>Technologies</strong>: Python, OpenCV, Tensorflow, MediaPipe, Numpy, Human Computer Interaction</p>
+            <p><strong>Future Additions</strong>: I would eventually like to have the model recognize gestures. This
+                would either require me to add another model such as a LSTM (Long Short-Term Memory) Recurrent Neural
+                Network or a 3D Convolutional Neural Network.</p>
         </section>
     </div>
 
@@ -417,8 +467,7 @@
 
             </div>
 
-            <p><strong>Technologies</strong>: This game is built with Unity 6 as well as C# for all the game controllers. The future AI
-                Agent will be built with Unity ML Agents.</p>
+            <p><strong>Technologies</strong>: C#, Unity Physics</p>
             <p><strong>Future Additions</strong>: As stated above the goal will be to build a PPO (Proximal Policy Optimization)
                 model to train an AI Agent to beat the game. To do this I will need to build randomized maps as well as
                 randomized collectible placements to allow the model to not overfit.</p>

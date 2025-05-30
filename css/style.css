@@ -234,6 +234,37 @@ main {
     color: #555;
 }
 
+.project-list.two-column ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    gap: 2rem;
+}
+
+.project-list.two-column ul > li {
+    flex: 1 1 45%; /* roughly two columns */
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.project-list.two-column ul ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.project-list.two-column ul > li > ul {
+    display: block;  /* Ensures inner list is vertical */
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.project-list.two-column ul > li > ul > li {
+    margin-bottom: 4px;
+}
+
 
 .project-list li {
     margin-bottom: 10px;

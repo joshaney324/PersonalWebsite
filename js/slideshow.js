@@ -4,6 +4,7 @@ window.onload = function() {
     showSlide(".ml_3", 1);
     showSlide(".ml_4", 1);
     showSlide(".bike_webapp", 1)
+    showSlide(".asl_detection", 1);
     showSlide(".unity", 1);
 }
 
