@@ -226,6 +226,15 @@ main {
     padding-left: 20px;
 }
 
+.project-list ul ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    list-style-type: circle;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
 .project-list li {
     margin-bottom: 10px;
     font-size: 16px;
