@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison of Neural Network Training Methods - Josh Aney</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<script src="js/slideshow.js"></script>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="personal_projects.html">Personal Projects</a></li>
+            <li><a href="images/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <div id="ml_4" class="container">
+        <section class="project">
+            <h2>Machine Learning Project 4 - A Comparison of Neural Network Training Methods</h2>
+            <p><strong>Description</strong>: For this project, I worked in a team with two other students at Montana
+                State University.
+                We were tasked with coding multiple different training methods for a neural network. We used the
+                <a href="https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original">Breast Cancer
+                    Wisconsin Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/42/glass+identification">Glass Identification Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/1/abalone">Abalone Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/162/forest+fires">Forest Fires Dataset</a>, and the
+                <a href="https://archive.ics.uci.edu/dataset/29/computer+hardware">Computer Hardware Dataset</a>.
+                This project then built on project 3. We used the same network structure that was created in project 3,
+                but this time we intended on testing other training methods. We used backpropagation as our baseline to
+                compare to, then we trained the network by the genetic algorithm, differential evolution, and particle
+                swarm optimization. Because of the complexity of these algorithms and the computational power needed,
+                we only tuned a small amount of the available hyperparameters. Once again we performed 10-fold cross
+                validation on all the datasets and then compared the results across all the training methods.</p>
+            <br>
+            <!--            <p>The full design document for this project can be found <a href="images/ml_4/ML%20Project%204%20Design%20Doc.pdf" target="_blank">here</a>.</p>-->
+            <!--            <br>-->
+            <p><strong>Results</strong>: The performance of the models was really variable. Datasets that tended to
+                overfit with backpropagation would often perform better with population based methods and datasets that
+                were relatively simple would often perform drastically better with backpropagation.</p>
+            <div class="slideshow-container ml_4">
+
+                <div class="mySlides fade-slide" data-caption="Breast Cancer Dataset Performance">
+                    <img src="images/ml_4/BreastCancerAccuracy.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Soybean (small) Dataset Performance">
+                    <img src="images/ml_4/SoyAccuracy.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Glass Dataset Performance">
+                    <img src="images/ml_4/GlassAccuracy.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Abalone Dataset Performance">
+                    <img src="images/ml_4/AbaloneMSE.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Computer Hardware Dataset Performance">
+                    <img src="images/ml_4/MachineMSE.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Forest Fire Dataset Performance">
+                    <img src="images/ml_4/ForestMSE.png" class="slideshow-img">
+                </div>
+
+                <div style="padding-top: 20px">
+                    <a class="prev" onclick="showSlide('.ml_4', -1)">&#10094;</a>
+                    <a class="next" onclick="showSlide('.ml_4', 1)">&#10095;</a>
+                    <span class="caption"></span>
+                </div>
+
+            </div>
+
+            <br>
+
+            <p><strong>Technologies</strong>: Python, Numpy, Matplotlib, UML, Latex</p>
+
+            <br>
+
+            <p><strong>Note</strong>: If you would like to see the full design document, code base, and research paper that goes with this project please feel free to reach out to me by email.</p>
+
+            <br>
+            <div class="text-center mt-5 mb-4">
+                <a href="personal_projects.html" class="btn btn-primary">
+                    ← Back to Personal Projects
+                </a>
+            </div>
+
+            <!--            <p>The full results from this experiment can be found <a href="images/ml_4/ml_paper_4.pdf" target="_blank">here</a></p>-->
+        </section>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2024 Josh Aney | <a href="mailto:josh.aney@icloud.com">josh.aney@icloud.com</a> | <a
+                href="tel:+5075130517">(507)-513-0517</a> | GitHub: <a
+                href="https://github.com/joshaney324">joshaney324</a></p>
+    </div>
+</footer>
+
+</body>
+
+
+</html>

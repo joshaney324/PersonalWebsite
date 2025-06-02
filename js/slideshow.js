@@ -5,11 +5,14 @@ window.onload = function() {
     showSlide(".ml_4", 1);
     showSlide(".bike_webapp", 1)
     showSlide(".asl_detection", 1);
-    showSlide(".unity", 1);
+    // showSlide(".unity", 1);
 }
 
 function showSlide(id, direction) {
     let slideShow = document.querySelector(id);
+    if (slideShow == undefined) {
+        return;
+    }
     let slideIndex = +(slideShow.getAttribute("data-index") ?? 0) + direction;
     let i;
     let slides = [...slideShow.querySelectorAll(".mySlides")];

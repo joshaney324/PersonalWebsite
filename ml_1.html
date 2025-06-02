@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naive Bayes - Josh Aney</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<script src="js/slideshow.js"></script>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="personal_projects.html">Personal Projects</a></li>
+            <li><a href="images/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+
+
+    <div id="ml_1" class="container">
+        <section class="project">
+            <h2>Machine Learning Project 1 - Naive Bayes</h2>
+            <p><strong>Description:</strong> For this project, I worked in a team with another student at Montana State
+                University. We
+                were faced with coding a Naive Bayes model from scratch to be used on classification datasets from the
+                <a href="https://archive.ics.uci.edu/">UCI Machine Learning Repository</a>. For this project, we used
+                the
+                <a href="https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original">Breast Cancer
+                    Wisconsin Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/42/glass+identification">Glass Identification Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/105/congressional+voting+records">Congressional Voting
+                    Records Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/53/iris">Iris Dataset</a>, and
+                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>. A base model
+                performance was received after testing each of the datasets. We performed 10-fold cross validation, and
+                we used precision recall and accuracy as the metrics. Once we had a base performance, we then added
+                artificial noise to the datasets. This was done by selecting 10% of the features in the dataset at
+                random and
+                then mixing up the order of that given attribute. We then performed the experiment one more time to test
+                how our Naive Bayes model performed with more noise.</p>
+            <br>
+            <!--            <p>The full design document for this project can be found <a href="images/ml_1/Project%201%20Design%20Document.pdf" target="_blank">here</a>.</p>-->
+            <!--            <br>-->
+            <p><strong>Results:</strong> Our Naive Bayes model performed well on all the datasets with a slight decrease
+                in performance with the simulated noise.</p>
+
+
+            <div class="slideshow-container ml_1">
+
+                <div class="mySlides fade-slide" data-caption="Original Data Averages">
+                    <img src="images/ml_1/original_data_avgs.svg" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Noisy Data Averages">
+                    <img src="images/ml_1/noisy_data_avgs.svg" class="slideshow-img">
+                </div>
+
+                <div style="padding-top: 20px">
+                    <a class="prev" onclick="showSlide('.ml_1', -1)">&#10094;</a>
+                    <a class="next" onclick="showSlide('.ml_1', 1)">&#10095;</a>
+                    <span class="caption"></span>
+                </div>
+
+            </div>
+
+
+            <br>
+
+            <p><strong>Technologies</strong>: Python, Numpy, Matplotlib, UML, Latex</p>
+            <br>
+
+            <p><strong>Note</strong>: If you would like to see the full design document, code base, and research paper that goes with this project please feel free to reach out to me by email.</p>
+
+            <br>
+            <div class="text-center mt-5 mb-4">
+                <a href="personal_projects.html" class="btn btn-primary">
+                    ← Back to Personal Projects
+                </a>
+            </div>
+
+            <!--            <p>The full results from this experiment can be found <a href="images/ml_1/ml_paper_1.pdf" target="_blank">here</a></p>-->
+        </section>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2024 Josh Aney | <a href="mailto:josh.aney@icloud.com">josh.aney@icloud.com</a> | <a
+                href="tel:+5075130517">(507)-513-0517</a> | GitHub: <a
+                href="https://github.com/joshaney324">joshaney324</a></p>
+    </div>
+</footer>
+
+</body>
+
+
+</html>

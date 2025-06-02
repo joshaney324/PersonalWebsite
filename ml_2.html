@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Nearest-Neighbors Methods - Josh Aney</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<script src="js/slideshow.js"></script>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="personal_projects.html">Personal Projects</a></li>
+            <li><a href="images/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <div id="ml_2" class="container">
+        <section class="project">
+            <h2>Machine Learning Project 2 - K Nearest Neighbors Methods</h2>
+            <p><strong>Description</strong>: For this project, I worked in a team with two other students at Montana
+                State University.
+                We were tasked with coding a KNN classification model, KNN regression model, edited KNN classification
+                model, edited KNN regression model, and a K-Means clustering model from scratch. We then used these
+                models on a variety of datasets. We used the
+                <a href="https://archive.ics.uci.edu/dataset/15/breast+cancer+wisconsin+original">Breast Cancer
+                    Wisconsin Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/42/glass+identification">Glass Identification Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/91/soybean+small">Soybean (Small) Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/1/abalone">Abalone Dataset</a>,
+                <a href="https://archive.ics.uci.edu/dataset/162/forest+fires">Forest Fires Dataset</a>, and the
+                <a href="https://archive.ics.uci.edu/dataset/29/computer+hardware">Computer Hardware Dataset</a>.
+                For the classification datasets, a base KNN classification model was created. To do this we took out a
+                hold-out fold from the data to tune all the hyperparameters for the model. Once the model was tuned,
+                10-fold
+                cross validation was completed with the remaining data. There was no removal of noisy data during this
+                run.
+                We then completed another run of this experiment, but we used an edited KNN classification model, so the
+                model would remove data points that it got wrong. This in turn ended up removing noise. A similar
+                process
+                was completed for the regression datasets, but the only difference in the model was that a kernel was
+                used to weight the distance of the K closest neighbors instead of just going with the mean of the k
+                closest neighbors. For the edited KNN regression model, we had to tune a threshold for how close the
+                prediction was to the actual value to decide if the model would remove the datapoint. Finally, we
+                performed the experiment one more time, but instead of using edited KNN models to find the edited
+                dataset,
+                we used the centroids from a K-Means Clustering model. Once these experiments were completed, we then
+                analyzed and compared the results from all the different models</p>
+            <br>
+            <!--            <p>The full design document for this project can be found <a href="images/ml_2/Project%202%20Design%20Document.pdf" target="_blank">here</a>.</p>-->
+            <!--            <br>-->
+            <p><strong>Results</strong>: Many of the K Nearest Neighbors Methods performed better on classification data
+                then on regression data.
+                The performance of individual models depended on the structure of each dataset. Depending on if the
+                dataset
+                contained large amounts of outliers, the K-Means model or the edited model would perform better.</p>
+
+
+            <div class="slideshow-container ml_2">
+
+                <div class="mySlides fade-slide" data-caption="Breast Cancer Dataset Performance">
+                    <img src="images/ml_2/BreastCancerBarPlot.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Soybean (small) Dataset Performance">
+                    <img src="images/ml_2/SoyBarPlot.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Glass Dataset Performance">
+                    <img src="images/ml_2/GlassBarPlot.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Abalone Dataset Performance">
+                    <img src="images/ml_2/AbaloneBarPlot.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Computer Hardware Dataset Performance">
+                    <img src="images/ml_2/HardwareBarPlot.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Forest Fire Dataset Performance">
+                    <img src="images/ml_2/ForestBarPlot.png" class="slideshow-img">
+                </div>
+
+                <div style="padding-top: 20px">
+                    <a class="prev" onclick="showSlide('.ml_2', -1)">&#10094;</a>
+                    <a class="next" onclick="showSlide('.ml_2', 1)">&#10095;</a>
+                    <span class="caption"></span>
+                </div>
+
+            </div>
+            <br>
+
+            <p><strong>Technologies</strong>: Python, Numpy, Matplotlib, UML, Latex</p>
+
+            <br>
+            <p><strong>Note</strong>: If you would like to see the full design document, code base, and research paper that goes with this project please feel free to reach out to me by email.</p>
+
+            <br>
+            <div class="text-center mt-5 mb-4">
+                <a href="personal_projects.html" class="btn btn-primary">
+                    ← Back to Personal Projects
+                </a>
+            </div>
+            <!--            <p>The full results from this experiment can be found <a href="images/ml_2/ml_paper_2.pdf" target="_blank">here</a></p>-->
+        </section>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2024 Josh Aney | <a href="mailto:josh.aney@icloud.com">josh.aney@icloud.com</a> | <a
+                href="tel:+5075130517">(507)-513-0517</a> | GitHub: <a
+                href="https://github.com/joshaney324">joshaney324</a></p>
+    </div>
+</footer>
+
+</body>
+
+
+</html>
