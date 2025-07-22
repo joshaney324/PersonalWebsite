@@ -73,6 +73,8 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+
 }
 
 .container {
@@ -269,4 +271,14 @@ main {
 .project-list li {
     margin-bottom: 10px;
     font-size: 16px;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;  /* Match your background color */
+    padding: 10px 0;         /* Add some padding */
+    z-index: 1000;          /* Ensure it stays on top */
 }
