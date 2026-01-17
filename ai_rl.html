@@ -1,111 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naive Bayes - Josh Aney</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinforcement Learning - Josh Aney</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <script src="js/slideshow.js"></script>
-<!--test-->
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="personal_projects.html">Personal Projects</a></li>
-      <li><a href="images/resume.pdf" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
-</header>
 
-<main>
-
-
-
-  <div id="ai_rl" class="container">
-    <section class="project">
-      <h2>Reinforcement Learning: Q-Learning, SARSA, Value Iteration</h2>
-      <p><strong>Description:</strong> For this project, I worked in a team at Montana State
-        University. We were tasked to implement two model-free reinforcement learning algorithms, Q-Learning and SARSA, as well as one
-        model-based algorithm, Value Iteration. We were asked to implement these algorithms for a grid-based racetrack problem. Once we implemented
-        the algorithms, we compared the performance of each algorithm on two different crash scenarios. In the first scenario, the car would reset to
-        the nearest legal point of the track after a crash and in the second, the car would reset all the way to the starting line. We then compared the
-        the results for the model-free vs. model-based algorithms on all crash scenarios on three different tracks.</p>
-      <br>
-      <!--            <p>The full design document for this project can be found <a href="images/ml_1/Project%201%20Design%20Document.pdf" target="_blank">here</a>.</p>-->
-      <!--            <br>-->
-      <p><strong>Results:</strong> It was found that the model-free algorithms performed slightly worse in most cases and that often times the full restart crash scenario
-          would result in a lower path cost which was unexpected.</p>
-
-
-      <div class="slideshow-container ai_rl">
-
-        <div class="mySlides fade-slide" data-caption="Value Iteration Sample Paths">
-          <img src="images/ai_rl/combined_sample_paths.png" class="slideshow-img">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Josh Aney</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="personal_projects.html">Personal Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="images/resume.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
         </div>
+    </div>
+</nav>
 
-        <div class="mySlides fade-slide" data-caption="Full Restart Crash Scenario Performance">
-          <img src="images/ai_rl/strt.png" class="slideshow-img">
-        </div>
+<div class="container">
+    <main>
+        <section class="project">
+            <h2>Reinforcement Learning: Q-Learning, SARSA, Value Iteration</h2>
+            <p><strong>Description:</strong> For this project, I worked in a team at Montana State
+                University. We were tasked to implement two model-free reinforcement learning algorithms, Q-Learning and SARSA, as well as one
+                model-based algorithm, Value Iteration. We were asked to implement these algorithms for a grid-based racetrack problem. Once we implemented
+                the algorithms, we compared the performance of each algorithm on two different crash scenarios. In the first scenario, the car would reset to
+                the nearest legal point of the track after a crash and in the second, the car would reset all the way to the starting line. We then compared the
+                the results for the model-free vs. model-based algorithms on all crash scenarios on three different tracks.</p>
+            <br>
+            <p><strong>Results:</strong> It was found that the model-free algorithms performed slightly worse in most cases and that often times the full restart crash scenario
+                would result in a lower path cost which was unexpected.</p>
 
-        <div class="mySlides fade-slide" data-caption="Partial Restart Crash Scenario Performance">
-          <img src="images/ai_rl/nsrt.png" class="slideshow-img">
-        </div>
+            <div class="slideshow-container ai_rl">
+                <div class="mySlides fade-slide" data-caption="Value Iteration Sample Paths">
+                    <img src="images/ai_rl/combined_sample_paths.png" class="slideshow-img">
+                </div>
 
-        <div class="mySlides fade-slide" data-caption="Q-Learning convergence on different path scenarios">
-          <img src="images/ai_rl/Q_Learning_convergence.png" class="slideshow-img">
-        </div>
+                <div class="mySlides fade-slide" data-caption="Full Restart Crash Scenario Performance">
+                    <img src="images/ai_rl/strt.png" class="slideshow-img">
+                </div>
 
-        <div class="mySlides fade-slide" data-caption="SARSA convergence on different path scenarios">
-          <img src="images/ai_rl/SARSA_convergence.png" class="slideshow-img">
-        </div>
+                <div class="mySlides fade-slide" data-caption="Partial Restart Crash Scenario Performance">
+                    <img src="images/ai_rl/nsrt.png" class="slideshow-img">
+                </div>
 
+                <div class="mySlides fade-slide" data-caption="Q-Learning convergence on different path scenarios">
+                    <img src="images/ai_rl/Q_Learning_convergence.png" class="slideshow-img">
+                </div>
 
+                <div class="mySlides fade-slide" data-caption="SARSA convergence on different path scenarios">
+                    <img src="images/ai_rl/SARSA_convergence.png" class="slideshow-img">
+                </div>
 
-        <div style="padding-top: 20px">
-          <a class="prev" onclick="showSlide('.ai_rl', -1)">&#10094;</a>
-          <a class="next" onclick="showSlide('.ai_rl', 1)">&#10095;</a>
-          <span class="caption"></span>
-        </div>
+                <div style="padding-top: 20px">
+                    <a class="prev" onclick="showSlide('.ai_rl', -1)">&#10094;</a>
+                    <a class="next" onclick="showSlide('.ai_rl', 1)">&#10095;</a>
+                    <span class="caption"></span>
+                </div>
+            </div>
 
-      </div>
+            <br>
+            <p><strong>Technologies</strong>: Python, Numpy, Matplotlib, UML, Latex</p>
+            <br>
+            <p><strong>Note</strong>: If you would like to see the full design document, code base, and research paper that goes with this project please feel free to reach out to me by email.</p>
+            <br>
 
-
-      <br>
-
-      <p><strong>Technologies</strong>: Python, Numpy, Matplotlib, UML, Latex</p>
-      <br>
-
-      <p><strong>Note</strong>: If you would like to see the full design document, code base, and research paper that goes with this project please feel free to reach out to me by email.</p>
-
-      <br>
-      <div class="text-center mt-5 mb-4">
-        <a href="personal_projects.html" class="btn btn-primary">
-          ← Back to Personal Projects
-        </a>
-      </div>
-
-      <!--            <p>The full results from this experiment can be found <a href="images/ml_1/ml_paper_1.pdf" target="_blank">here</a></p>-->
-    </section>
-  </div>
-
-</main>
+            <div class="text-center mt-5 mb-4">
+                <a href="personal_projects.html" class="btn btn-primary">
+                    &larr; Back to Personal Projects
+                </a>
+            </div>
+        </section>
+    </main>
+</div>
 
 <footer class="footer">
-  <div class="footer-bottom">
-    <p>© 2024 Josh Aney | <a href="mailto:josh.aney@icloud.com">josh.aney@icloud.com</a> | <a
-            href="tel:+5075130517">(507)-513-0517</a> | GitHub: <a
-            href="https://github.com/joshaney324">joshaney324</a></p>
-  </div>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Josh Aney | <a href="mailto:josh.aney@icloud.com">josh.aney@icloud.com</a> | <a
+                    href="tel:+5075130517">(507)-513-0517</a> | GitHub: <a
+                    href="https://github.com/joshaney324">joshaney324</a></p>
+        </div>
+    </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
 </html>
