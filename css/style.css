@@ -64,9 +64,10 @@ main {
 }
 
 .profile img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     border: 3px solid var(--accent-primary);
     margin-bottom: 1rem;
