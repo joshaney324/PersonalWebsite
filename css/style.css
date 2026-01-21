@@ -578,3 +578,17 @@ main > h1 {
 .fade-slide {
     animation: fadeIn 0.5s ease;
 }
+
+/* Contact Section */
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.contact-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
