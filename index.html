@@ -166,10 +166,72 @@
                             <i class="fab fa-linkedin-in"></i> LinkedIn
                         </a>
                     </div>
+
+                    <h2>Gallery</h2>
+                    <div class="image-carousel">
+                        <button class="carousel-arrow carousel-prev" onclick="moveCarousel(-1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel-track-container">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-08-29.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-08-32.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-08-34.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-08-37.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-19.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-21.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-23.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-25.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-26.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-27.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-29.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-31.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-32.jpg" alt="Gallery image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/gallery/photo_2026-01-28_20-09-35.jpg" alt="Gallery image">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-arrow carousel-next" onclick="moveCarousel(1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                 </section>
             </div>
         </div>
     </main>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" class="lightbox-content" src="" alt="Full size image">
 </div>
 
 <footer class="footer">
@@ -182,5 +244,40 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+<script>
+    let carouselPosition = 0;
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const slidesToShow = 4;
+
+    function moveCarousel(direction) {
+        const maxPosition = slides.length - slidesToShow;
+        carouselPosition += direction;
+        if (carouselPosition < 0) carouselPosition = 0;
+        if (carouselPosition > maxPosition) carouselPosition = maxPosition;
+        const slideWidth = slides[0].offsetWidth + 12; // width + gap
+        track.style.transform = `translateX(-${carouselPosition * slideWidth}px)`;
+    }
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.carousel-slide img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+</script>
 </body>
 </html>
