@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Tracker - Josh Aney</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script src="js/slideshow.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Josh Aney</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="personal_projects.html">Personal Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="images/resume.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <main>
+        <section class="project">
+            <h2>Earthquake Tracker</h2>
+            <p><strong>Description</strong>: For this project, I wanted to experiment with Vibe Coding. I had
+                previously used few CLI coding tools, and I thought it would be cool to see what I could build. I also
+                wanted to create this project using technologies that I had not used in the past like React, NodeJS, and
+                TypeScript. For this project, I created an earthquake tracker that allowed users to view where and when
+                earthquakes were happening around the world as well as information about the area like the weather.
+                Overall, this was a cool experience see what these tools could build in such a short amount of time
+                considering my previous knowledge on the technologies used. I learned about the importance of the first
+                prompt as well as the importance of concise questions and bug descriptions. For this project I wrote
+                zero code by hand. It was done only through prompting and agent.</p>
+
+            <div class="slideshow-container earthquake_tracker">
+
+
+                <div class="mySlides fade-slide" data-caption="Earthquake Tracker">
+                    <img src="images/vibe_code/base_view.png" class="slideshow-img">
+                </div>
+
+                <div class="mySlides fade-slide" data-caption="Earthquake Tracker">
+                    <img src="images/vibe_code/earthquake_tracker.png" class="slideshow-img">
+                </div>
+
+                <div style="padding-top: 20px">
+                    <a class="prev" onclick="showSlide('.earthquake_tracker', -1)">&#10094;</a>
+                    <a class="next" onclick="showSlide('.earthquake_tracker', 1)">&#10095;</a>
+                    <span class="caption"></span>
+                </div>
+            </div>
+
+            <p><strong>Technologies</strong>: Claude Code (Sonnet 4.5), Vite, NodeJS, TypeScript, HTML, CSS</p>
+            <p><strong>Future Additions</strong>: Go through and clean up the code to match how I would code the project</p>
+
+            <div class="text-center mt-5 mb-4">
+                <a href="personal_projects.html" class="btn btn-primary">
+                    &larr; Back to Personal Projects
+                </a>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Josh Aney | <a href="mailto:josh.aney@icloud.com">josh.aney@icloud.com</a> | <a
+                    href="tel:+5075130517">(507)-513-0517</a> | GitHub: <a
+                    href="https://github.com/joshaney324">joshaney324</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

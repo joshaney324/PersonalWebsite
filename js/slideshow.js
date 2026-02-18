@@ -6,6 +6,7 @@ window.onload = function() {
     showSlide(".bike_webapp", 1)
     showSlide(".asl_detection", 1);
     showSlide(".ai_rl", 1);
+    showSlide(".earthquake_tracker", 1);
     // showSlide(".unity", 1);
 }
 
