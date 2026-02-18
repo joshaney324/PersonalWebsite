@@ -542,6 +542,14 @@ main {
     text-decoration: underline;
 }
 
+/* Center last card when it's alone in a row (odd total count) */
+@media (min-width: 768px) {
+    .row-cols-md-2 > .col:last-child:nth-child(odd) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* Page Titles */
 main > h1 {
     color: var(--text-primary);
